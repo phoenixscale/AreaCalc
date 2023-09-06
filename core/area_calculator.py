@@ -1,6 +1,4 @@
 from core.shape_interface import ShapeInterface
-from entities.circle import Circle
-from entities.square import Square
 
 class AreaCalculator:
     shapes: []
@@ -8,7 +6,7 @@ class AreaCalculator:
     def __init__(self, shapes: []) -> None:
         self.shapes = shapes
 
-    def sum(self) -> [int]:
+    def sum(self) -> int:
         summe = 0
         for x in self.shapes:
             if isinstance(x, ShapeInterface):
